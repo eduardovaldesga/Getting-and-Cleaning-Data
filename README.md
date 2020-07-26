@@ -12,5 +12,6 @@ The goals of the project area achieved in the lines showed in bold:
 4. Appropriately labels the data set with descriptive variable names. **8Line 24)**
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. **(Line 59)**
 
-**Note**
-The dataset is large to include in this repository. Thus, code is prepared to download, unzip, load and transform data automatically when is executed.
+### Note:
+
+The dataset is large to include in this repository. Thus, code is able to download, unzip, load and transform data automatically when is executed.
