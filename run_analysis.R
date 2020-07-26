@@ -2,15 +2,19 @@
 
 #This code loads, cleans and formats a data set form UCI according to requeriments of Course Project
 #The following goals are achieved:
-#   [Line 55]. Merges the training and the test sets to create one data set.
-#   [Line 26]. Extracts only the measurements on the mean and standard deviation for each measurement.
-#   [Line 32]. Uses descriptive activity names to name the activities in the data set
-#   [Line 24]. Appropriately labels the data set with descriptive variable names.
-#   [Line 59]. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+#   [Line 59]. Merges the training and the test sets to create one data set.
+#   [Line 30]. Extracts only the measurements on the mean and standard deviation for each measurement.
+#   [Line 36]. Uses descriptive activity names to name the activities in the data set
+#   [Line 28]. Appropriately labels the data set with descriptive variable names.
+#   [Line 63]. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 #The lines where each goal is achieved is showed in brackets [].
 
 library(tidyverse)
 library(stringr)
+
+#Download and unzip data. Resulting folder is same as base_dir
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip","data.zip")
+unzip("data.zip")
 
 #directory of files
 base_dir="UCI HAR Dataset"
